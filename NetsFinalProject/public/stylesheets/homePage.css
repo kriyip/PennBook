@@ -1,0 +1,421 @@
+body {
+	--color-background: white;
+	--color-card-primary: #283343;
+	--color-background-light: #283343;
+	--color-dark-gray: #283343;
+	--color-dark-text: #616F8C;
+	--color-button-hover: #283343;
+	--color-white: #CAD3DE;
+	--color-gray: #667483;
+	--color-accent-green-dark: #3E8C8C;
+	--color-accent-green-light: #50BFAB;
+	--border-radius: 4px;
+	
+	background: var(--color-background);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Console", "Courier New", monospace;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+img{
+	cursor: pointer;
+}
+
+.flex-div{
+	display: flex;
+
+}
+
+nav{
+	padding: 8px 2%;
+	justify-content: space-between;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	background: var(--color-button-hover);
+	top: 0;
+	z-index: 10;
+	margin-bottom: 14px;
+}
+
+.nav-right img{
+	width: 25px;
+	margin-right: 15px;
+}
+.nav-right .nav-circular-icon{
+	width: 35px;
+	border-radius: 50%;
+	margin-right: 0px;
+}
+
+/*
+.search-bar{			
+	border: 1px solid #5A5A5A;
+	margin-left: 15px;
+	padding: 6px 12px;
+	border-radius: var(--border-radius);
+	transition: background 0.2s, border-color 0.2s;
+	outline: none;
+	background: #eeeeee;
+}
+
+.search-bar:focus{
+	border: 1px solid var(--color-white);
+	background: #ffffff;
+}
+
+.search-bar input{
+	width: 400px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+*/
+.left{
+	width:300px;
+	max-width:300px;
+	position: sticky;
+}
+
+.left-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	max-width: 300px;
+	margin-left: 1rem;
+	padding: 2rem;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+	border-radius: var(--border-radius);
+	background: var(--color-button-hover);
+	align-items: center;
+	float:left;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.top-panel{
+	height: 100%;
+	width: 100%;
+	color: white;
+}
+
+.bot-panel{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: var(--color-gray);
+}
+
+.left-container .second{
+	
+}
+
+.form_button{
+	width: 50%;
+	padding: 0.5rem 0.25rem;
+	font-size: 1rem;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	background: var(--color-card-primary);
+}
+
+
+.form_button:hover {
+	background: var(--color-button-hover);
+	cursor: pointer;
+}
+
+.form_button:active {
+	transform: scale(0.98);
+}
+
+.posts-container{
+	align-items: center;
+	margin-left: 330px;
+}
+
+.create-post{
+	width: 575px;
+	max-width: 575px;
+	margin: 1rem;
+	padding-top: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 1rem;
+	border-radius: var(--border-radius);
+	background: #ffffff;
+	background: var(--color-button-hover);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.create-post .form_button{
+	padding: 0.5rem 0.25rem;
+	font-size: 1rem;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	width: 13%;
+	background: var(--color-secondary);
+}
+
+.create-post .search-bar{
+	margin-bottom: 1rem;
+	width: 97.5%;
+	padding: 0.75rem;
+	box-sizing: border-box;
+	border-radius: 6px;
+}
+
+.post{
+	color: white;
+	width: 575px;
+	max-width: 575px;
+	margin: 1rem;
+	padding: 2rem;
+	box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
+	border-radius: var(--border-radius);
+	background: var(--color-card-primary);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.link:hover{
+	background: var(--color-white);
+}
+.text_link:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.commentButton{
+	padding: 0.5rem 0.25rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	width: 13%;
+}
+
+
+
+.add-comment-textbox{
+	border: 1px solid #5A5A5A;
+	padding: 1px 8px;
+	border-radius: var(--border-radius);
+	transition: background 0.2s, border-color 0.2s;
+	outline: none;
+	background: white;
+}
+
+.add-comment-textbox:focus{
+	background: var(--color-white);
+	border: 1px solid var(--color-white);
+
+}
+
+.likeButton{
+	padding: 0.5rem 0.25rem;
+	font-size: 1rem;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	width: 13%;
+}
+
+.likeButton:hover {
+	background-color: #A5CACA;
+}
+
+.logo{
+	color: white;
+}
+
+.comment-container{
+	color: white;
+	align-items: right;
+	margin-left: 20px;
+	font-size: 0.75rem;
+}
+
+.indiv-comment-container{
+	width: 400px;
+	max-width: 400px;
+	margin: 1rem;
+	padding: 2rem;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	border-radius: var(--border-radius);
+	background: var(--color-button-hover);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.commentHeader{
+	
+}
+
+
+
+
+ 
+a {
+	color: #A2C9DB;
+	background-color: transparent;
+	text-decoration: none;
+ }
+  
+ .search-bar {
+	width: 100%;
+	max-width: 400px;
+	border-radius: 50%;
+	margin-left:30px;
+ }
+  
+  
+ .search-bar .search-input{
+	background: #fff;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+ }
+  
+  
+ .search-bar input {
+	background: white;
+	flex: 1;
+	border: 0;
+	outline: none;
+	font-size: 15px
+ }
+  
+ .search-bar button img {
+	width: 15px;
+ }
+  
+  
+ .search-bar button {
+	border: 0px;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background: #4267B2
+ }
+  
+  
+  
+ .search-input.active .autocom-box{
+	padding: 10px 8px;
+	opacity: 1;
+	pointer-events: auto;
+ }
+  
+ .search-input.active .autocom-box li{
+	display: block;
+ }
+
+ 
+ /*
+Usually, should hot show anything
+*/
+.autocom-box li{
+	list-style: none;
+	padding: 8px 12px;
+	width: 100%;
+	display: none;
+	cursor: default;
+	border-radius: 3px;
+ }
+  
+ .search-input .autocom-box{
+	padding: 0;
+	pointer-events: none;
+	max-height: 280px;
+	overflow-y: auto;
+   
+	position: absolute;
+	background:  #3E7888;
+	width: 250px;
+	z-index: 999;
+
+	/*
+	padding: 8px 12px;
+	width: 280px;
+	*/
+ }
+  
+ .autocom-box li:hover{
+	background: rgba(211,211,211, 0.3)
+ }
+  
+
+
+
+
+
+
+ /* Notification bar ! */
+  
+  
+ .notification-wrapper {
+    position: relative;
+}
+
+.notification-popup {
+    
+    display: none;
+    position: absolute;
+    cursor: default;
+    right: 50%;
+    background: #3E7888;
+    width: 400px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+
+
+.notification-popup.active {
+    display: block
+}
+
+.notification-popup-header {
+    margin-top: 10px;
+    display: inline-block
+}
+
+.notification-item {
+    border-bottom: 2px solid lightgrey;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+}
+
+button.notification-button {
+    position: relative;
+    margin-right: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+    background: none;
+    border: none;
+}
+
+
+
+.notification-item ul li {
+    list-style: none;
+    padding-right: 20px;
+}
